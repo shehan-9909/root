@@ -23,7 +23,7 @@ echo -e $ylo"https://slterminal.godaddysites.com"
 echo
 echo -e $pink "  " $red"[1] install root $red"$pink"         " $rset
 echo -e $pink "  " $red"[2] uninstall root $red"$pink"        " $rset
-echo -e $pink "  " $red"[3] exit $red"$pink"     " $rset
+echo -e $pink "  " $red"[3] root menu $red"$pink"     " $rset
 read -p'input:--' enter;
 
 if [ "${enter}" = "1" ]
@@ -62,5 +62,9 @@ read -p'input:--' enter;
 
 if [ "${enter}" = "3" ]
 then
-exit
+cd $HOME
+cd root/cache
+./startubuntu.sh
+fi
+
 fi

@@ -37,14 +37,12 @@ echo -e $red"enter username & password"
 sleep 1.0
 clear
 python ps.py
-echo -e $c"[*]installing..
+echo -e $c"[*]installing.."
 sleep 5.0
 chmod +x ubuntu.sh
 ./ubuntu.sh -y
 ./startubuntu.sh
 fi
-
-read -p'input:--' enter;
 
 if [ "${enter}" = "2" ]
 then
@@ -55,16 +53,11 @@ echo -e $c"[*]uninstalling"
 sleep 5.0
 echo -e $ylo" uninstall successful"
 sleep 2.0
-exit
 fi
-
-read -p'input:--' enter;
 
 if [ "${enter}" = "3" ]
 then
 cd $HOME
 cd root/cache
 ./startubuntu.sh
-fi
-
 fi
